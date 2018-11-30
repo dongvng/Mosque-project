@@ -1,0 +1,93 @@
+/*team component*/
+*{
+	font-family: 'Montserrat', sans-serif;
+}
+.team-container{
+	width: 480px;
+	height: 210px;
+	box-sizing: border-box;
+}
+.team-container:after{
+	content: '';
+	clear: both;
+}
+
+.team-item-img{
+	position: relative;
+	float: left;
+	width: 210px;
+	height: 210px;
+}
+.team-item-img a{
+	height: 100%;
+}
+.team-item-img img{
+	width: 210px;
+	height: 210px;
+}
+
+.team-item-img .overlay .fas{
+	position: absolute;
+	z-index: 1;
+	color: red;
+	transform: scale(1.2);
+	transition: transform 0.4s;
+}	
+	
+
+.team-item-img:hover .overlay .fas{	
+	transform: scale(0.8);
+}
+.team-item-img .overlay .fa-search-plus{
+	font-size: 22px;
+	z-index: 5;
+	color: white;
+}
+
+
+.team-item-img .overlay{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #333;
+	opacity:0;
+	transition: all 0.4s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.team-item-img:hover .overlay{
+	opacity: 0.8;
+}
+
+.team-item-ctn{
+	height: 100%;
+	font-size: 14px;
+	margin-left: 240px;
+	color: #222;
+}
+.mng-about{
+	border-bottom: 1px solid #666;
+	margin-bottom: 10px;
+	padding-top: 17px;
+}
+.mng-ctn{
+	line-height: 1.4;
+	color: #555;
+}
+
+.team-item-icon{
+	margin-top: 10px;
+}
+.team-icon{
+	margin-right: 15px;
+}
+.team-item-icon a{
+	color: #666;
+	transition: color 0.3s;
+}
+.team-item-icon a:hover{
+	color: red;
+}
