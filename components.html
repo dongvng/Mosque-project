@@ -5,11 +5,74 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="component.css">
 	<link rel="stylesheet" type="text/css" href="component-team.css">
+	<link rel="stylesheet" type="text/css" href="video-component.css">
+	<link rel="stylesheet" type="text/css" href="info-component.css">
 	<link rel="stylesheet" type="text/css" href="footer-component.css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
+	<!-- Meet our team component -->
+
+	<!-- <div class="team-container">		
+		<div class="team-item-img">
+			<a href="#">
+				<img src="./images/team1.jpg" alt="team1">
+				<div class="overlay">
+					<i class="fas fa-search-plus "></i>
+					<i class="fas fa-circle fa-3x"></i>
+				</div>	
+			</a>		
+		</div>		
+		<div class="team-item-ctn">
+			<div class="mng-about">
+				<p style="font-weight:600; font-size: 15px;">Harrison Smith</p>
+				<p style="color:#555;">Mosque Manager</p>
+			</div>
+			<div class="mng-ctn">Lorem ipsum dolor sit amet, consecte adipiscing elit.</div>
+			<div class="team-item-icon">
+				<a href="#"><span class="team-icon"><i class="fab fa-facebook-f"></i></span></a>
+				<a href="#"><span class="team-icon"><i class="fab fa-twitter"></i></span></a>
+				<a href="#"><span class="team-icon"><i class="fab fa-google-plus-g"></i></span></a>
+				<a href="#"><span class="team-icon"><i class="fab fa-linkedin-in"></i></span></a>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- video component -->
+	<div class="video-container">
+		<div class="video-inside">
+			<a id="displayVideo" href="#"><i class="far fa-play-circle"></i></a>
+			<h2 class="video-title">HOW IT WORKS</h2>
+		</div>
+	</div>
+	
+	<div class="video-display">
+		<div class="video-area">		
+				<span title="Close" class="video-close">&times;</span>
+				<iframe class="video-iframe" width="900" height="500" src="https://www.youtube.com/embed/m2u9j4OhQEk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>		
+		</div>
+	</div>
+	
+	<script>
+		var vidDisplay = document.getElementsByClassName("video-display")[0];
+		var displayVideo = document.getElementById("displayVideo");
+		var closebtn = document.getElementsByClassName("video-close")[0];
+		
+
+		displayVideo.onclick = function(){
+			vidDisplay.style.display = "block";
+		}
+		closebtn.onclick = function(){
+			vidDisplay.style.display = "none";
+		}
+		window.onclick = function(event) {
+		    if (event.target == vidDisplay) {
+		        vidDisplay.style.display = "none";
+			}
+		}
+	</script>
 	<!-- BLOG component -->
+
 	<!-- <div class="item-wrapper">
 		<div class="item-img">
 			<img class="img-scale" src="./images/blog1.jpg" alt="blog1">
@@ -39,37 +102,123 @@
 		</div>
 	</div> -->
 
-	<!-- Meet our team component -->
-	<div class="team-container">		
-		<div class="team-item-img">
-			<a href="#">
-				<img src="./images/team1.jpg" alt="team1">
-				<div class="overlay">
-					<i class="fas fa-search-plus "></i>
-					<i class="fas fa-circle fa-3x"></i>
-				</div>	
-			</a>		
-		</div>		
-		<div class="team-item-ctn">
-			<div class="mng-about">
-				<p style="font-weight:600; font-size: 15px;">Harrison Smith</p>
-				<p style="color:#555;">Mosque Manager</p>
+	
+
+	<!-- info component -->
+	<!-- <div class="info-container">
+		<div class="info item-contact">
+			<div class="info-item-ct-img">
+				<img src="./images/LOGO.png" alt="home">
 			</div>
-			<div class="mng-ctn">Lorem ipsum dolor sit amet, consecte adipiscing elit.</div>
-			<div class="team-item-icon">
-				<a href="#"><span class="team-icon"><i class="fab fa-facebook-f"></i></span></a>
-				<a href="#"><span class="team-icon"><i class="fab fa-twitter"></i></span></a>
-				<a href="#"><span class="team-icon"><i class="fab fa-google-plus-g"></i></span></a>
-				<a href="#"><span class="team-icon"><i class="fab fa-linkedin-in"></i></span></a>
+			<div class="info-item-ct-ctn">Nullam tristique nunc sit amet congue, eget sollicitudin orci nisl.</div>
+			<div class="info-item-ct-ct">
+				<ul class="info-item-ct-ul">
+					<li>
+						<i class="fas fa-phone"></i>
+						<a href="#">+(000)88-123-4455-88</a>
+					</li>
+					<li>
+						<i class="fas fa-envelope"></i>
+						<a href="#">contact@mosque.com</a>
+					</li>
+					<li>
+						<i class="fas fa-map-marker-alt"></i>
+						<a href="#">123 StQueens, NY, USA</a>
+					</li>
+				</ul>
 			</div>
 		</div>
-	</div>
-
+		<div class="info item-company">
+			<h4>Company</h4>
+			<div>
+				<ol class="ol-style">
+					<a href="#"><li>About us</li></a>
+					<a href="#"><li>Donation</li></a>
+					<a href="#"><li>Blog</li></a>
+					<a href="#"><li>Video</li></a>
+					<a href="#"><li>Contact us</li></a>
+				</ol>
+			</div>
+		</div>
+		<div class="info item-support">
+			<h4>Help & Support</h4>
+			<div>
+				<ol class="ol-style">
+					<a href="#"><li>Help centre</li></a>
+					<a href="#"><li>Free templates</li></a>
+					<a href="#"><li>Refund policy</li></a>
+					<a href="#"><li>Report span</li></a>		
+				</ol>
+			</div>
+		</div>
+		<div class="info item-gallery  ">
+			<h4>Mosque Gallery</h4>
+			<div class="info-item-img-ctner">
+				<div class="info-item-img">
+					<a href="#">
+						<img src="./images/gallery1.jpg" alt="team1">
+						<div class="info-overlay">
+							<i class="fas fa-search-plus "></i>
+							<i class="fas fa-circle fa-3x"></i>
+						</div>	
+					</a>		
+				</div>	
+				<div class="info-item-img">
+					<a href="#">
+						<img src="./images/gallery2.jpg" alt="team1">
+						<div class="info-overlay">
+							<i class="fas fa-search-plus "></i>
+							<i class="fas fa-circle fa-3x"></i>
+						</div>	
+					</a>		
+				</div>	
+				<div class="info-item-img" style="margin-right:0;">
+					<a href="#">
+						<img src="./images/gallery3.jpg" alt="team1">
+						<div class="info-overlay">
+							<i class="fas fa-search-plus "></i>
+							<i class="fas fa-circle fa-3x"></i>
+						</div>	
+					</a>		
+				</div>	
+			</div>
+			<div>
+				<div class="info-item-img">
+					<a href="#">
+						<img src="./images/gallery4.jpg" alt="team1">
+						<div class="info-overlay">
+							<i class="fas fa-search-plus "></i>
+							<i class="fas fa-circle fa-3x"></i>
+						</div>	
+					</a>		
+				</div>
+				<div class="info-item-img">
+					<a href="#">
+						<img src="./images/gallery5.jpg" alt="team1">
+						<div class="info-overlay">
+							<i class="fas fa-search-plus "></i>
+							<i class="fas fa-circle fa-3x"></i>
+						</div>	
+					</a>		
+				</div>	
+				<div class="info-item-img" style="margin-right:0;">
+					<a href="#">
+						<img src="./images/gallery6.jpg" alt="team1">
+						<div class="info-overlay">
+							<i class="fas fa-search-plus "></i>
+							<i class="fas fa-circle fa-3x"></i>
+						</div>	
+					</a>		
+				</div>		
+			</div>
+		</div>
+	</div> -->
+	
 	<!-- footer component -->
 	
-	<div class="footer-item">
+	<!-- <div class="footer-item">
 		&copy; Mosque 2018. All Rights Reserved
-	</div>
+	</div> -->
 	
 </body>
 </html>
