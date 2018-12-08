@@ -2,9 +2,11 @@
 <html>
 <head>
 	<title>component</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="component.css">
-	<link rel="stylesheet" type="text/css" href="component-team.css">
+	<link rel="stylesheet" type="text/css" href="blog-component.css">
+	<link rel="stylesheet" type="text/css" href="team-component.css">
 	<link rel="stylesheet" type="text/css" href="video-component.css">
 	<link rel="stylesheet" type="text/css" href="info-component.css">
 	<link rel="stylesheet" type="text/css" href="footer-component.css">
@@ -13,11 +15,13 @@
 	<link rel="stylesheet" type="text/css" href="portfolio-component.css">
 	<link rel="stylesheet" type="text/css" href="about-component.css">
 	<link rel="stylesheet" type="text/css" href="header-component.css">
-
+	<link rel="stylesheet" type="text/css" href="carousel-component.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 </head>
 <body>
 	<!-- header component -->
+
 	<div class="upper-header">
 		<div class="sub-upper-header">
 			<p>(555) 123-4567</p>
@@ -30,7 +34,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="header">
+	<div id="nav-bar" class="header">
 		<div class="sub-header">
 			<div class="header-logo-image">
 				<a href="#"><img src="./images/LOGO.png" alt="Logo"></a>
@@ -63,8 +67,58 @@
 			</div>
 		</div>
 	</div>
+	 
+	<!-- carousel component -->
+	
+	<div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="false">
+		<ol class="carousel-indicators">
+		    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+		    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+		</ol>
+		<div class="carousel-inner">
+		    <div class="carousel-item active">
+			    <img class="d-block w-100" src="./images/slide1.jpg" alt="First slide">
+			    <div class="carousel-inner-title left">
+					<h3>we help you to</h3>
+					<h2>only alah can benefit or harm</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed consectetur adipisic consectetu do aliqua. Ut enim lab adipisicing elit, sed lab adipisicing elit lab.</p>
+					<div class="carousel-lm"><a href="#">learn more</a></div>
+			    </div>
+		    </div>
+		    <div class="carousel-item">
+		        <img class="d-block w-100" src="./images/slide2.jpg" alt="Second slide">
+		        <div class="carousel-inner-title middle">
+					<h3>we help you to</h3>
+					<h2>only alah can benefit or harm</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed consectetur adipisic consectetu do aliqua. Ut enim lab adipisicing elit, sed lab adipisicing elit lab.</p>
+					<div class="carousel-lm"><a href="#">learn more</a></div>
+			    </div>
+		    </div>
+		    <div class="carousel-item">
+		         <img class="d-block w-100" src="./images/slide3.jpg" alt="Third slide">
+		         <div class="carousel-inner-title right">
+					<h3>we help you to</h3>
+					<h2>only alah can benefit or harm</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed consectetur adipisic consectetu do aliqua. Ut enim lab adipisicing elit, sed lab adipisicing elit lab.</p>
+					<div class="carousel-lm"><a href="#">learn more</a></div>
+			    </div>
+		    </div>
+		</div>
+	  	<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Previous</span>
+	  	</a>
+	    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		    <span class="sr-only">Next</span>
+		</a>
+	</div>
+	
+	
 	<!-- about component -->
-	<!-- <div class="about-container">
+
+	 <div class="about-container">
 		<div class="sub-about-container">
 			<div class="about-content">
 				<div class="ab-ctn ab-ctn-1">Who we are</div>
@@ -82,9 +136,10 @@
 				<img src="./images/about.jpg" alt="about">
 			</div>
 		</div>
-	</div> -->
+	</div>
+	
 	<!-- portfolio component -->
-	<!-- <div class="portfolio-container">
+	<div class="portfolio-container">
 		<div class="portfolio-subcontainer">
 			<div class="portfolio-head pflctn">
 				<div class="portfolio-head-ctn">our awesome portfolio</div>
@@ -92,7 +147,7 @@
 			</div>
 			<div class="portfolio-pagination pflctn">
 				<div class="sub-portfolio-pagination">
-					<a href="#">all</a>
+					<a class="sub-pfl-active" href="#">all</a>
 					<a href="#">mosque</a>
 					<a href="#">madina</a>
 					<a href="#">islam</a>
@@ -148,9 +203,11 @@
 				</div>								
 			</div>
 		</div>
-	</div> -->
+	</div>
+	
 	<!-- donation component -->
-	<!-- <div class="donation-container">
+
+	<div class="donation-container">
 		<div class="donation-subcontainer">
 			<div class="donation-content">
 				<div class="donation-ctn-head ctn">give donation get times the reward</div>
@@ -179,9 +236,10 @@
 				<img src="./images/donate.png" alt="castle">
 			</div>
 		</div>	
-	</div> -->
+	</div> 
 	<!-- events component -->
-	<!-- <div class="event-container">
+
+	<div class="event-container">
 		<div class="event-subcontainer">
 			<div class="event-header">
 				<h2>Mosque Events</h2>
@@ -273,39 +331,118 @@
 			</div>
 		</div>
 	</div>
- -->
-	
-	<!-- Meet our team component -->
 
-	<!-- <div class="team-container">		
-		<div class="team-item-img">
-			<a href="#">
-				<img src="./images/team1.jpg" alt="team1">
-				<div class="overlay">
-					<i class="fas fa-search-plus "></i>
-					<i class="fas fa-circle fa-3x"></i>
-				</div>	
-			</a>		
-		</div>		
-		<div class="team-item-ctn">
-			<div class="mng-about">
-				<p style="font-weight:600; font-size: 15px;">Harrison Smith</p>
-				<p style="color:#555;">Mosque Manager</p>
-			</div>
-			<div class="mng-ctn">Lorem ipsum dolor sit amet, consecte adipiscing elit.</div>
-			<div class="team-item-icon">
-				<a href="#"><span class="team-icon"><i class="fab fa-facebook-f"></i></span></a>
-				<a href="#"><span class="team-icon"><i class="fab fa-twitter"></i></span></a>
-				<a href="#"><span class="team-icon"><i class="fab fa-google-plus-g"></i></span></a>
-				<a href="#"><span class="team-icon"><i class="fab fa-linkedin-in"></i></span></a>
+	<!-- Meet our team component -->
+	
+	<div class="team-container">
+		<div class="sub-team-container">
+			<div class="meet-team-item">Meet Our Team</div>
+			<p class="meet-team-para">Nunc gravida venenatis odio, eleifend pellentesque augue pulvinar in. Integer dignissim, sem vel lacinia sagittis, metus magna vestibulum.</p>
+			<div class="team-item">
+				<div class="team-item-content">
+					<div class="team-item-img">
+						<a href="#">
+							<img src="./images/team1.jpg" alt="team1">
+							<div class="overlay">
+								<i class="fas fa-search-plus "></i>
+								<i class="fas fa-circle fa-3x"></i>
+							</div>	
+						</a>		
+					</div>		
+					<div class="team-item-ctn">
+						<div class="mng-about">
+							<p style="font-weight:600; font-size: 15px;">Harrison Smith</p>
+							<p style="color:#555;">Mosque Manager</p>
+						</div>
+						<div class="mng-ctn">Lorem ipsum dolor sit amet, consecte adipiscing elit.</div>
+						<div class="team-item-icon">
+							<a href="#"><span class="team-icon"><i class="fab fa-facebook-f"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-twitter"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-google-plus-g"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-linkedin-in"></i></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="team-item-content">
+					<div class="team-item-img">
+						<a href="#">
+							<img src="./images/team2.jpg" alt="team1">
+							<div class="overlay">
+								<i class="fas fa-search-plus "></i>
+								<i class="fas fa-circle fa-3x"></i>
+							</div>	
+						</a>		
+					</div>		
+					<div class="team-item-ctn">
+						<div class="mng-about">
+							<p style="font-weight:600; font-size: 15px;">Jafarni Doe</p>
+							<p style="color:#555;">Imam of the Mosque</p>
+						</div>
+						<div class="mng-ctn">Lorem ipsum dolor sit amet, consecte adipiscing elit.</div>
+						<div class="team-item-icon">
+							<a href="#"><span class="team-icon"><i class="fab fa-facebook-f"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-twitter"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-google-plus-g"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-linkedin-in"></i></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="team-item-content">
+					<div class="team-item-img">
+						<a href="#">
+							<img src="./images/team3.jpg" alt="team1">
+							<div class="overlay">
+								<i class="fas fa-search-plus "></i>
+								<i class="fas fa-circle fa-3x"></i>
+							</div>	
+						</a>		
+					</div>		
+					<div class="team-item-ctn">
+						<div class="mng-about">
+							<p style="font-weight:600; font-size: 15px;">Adam Smith</p>
+							<p style="color:#555;">Myojin of the Mosquer</p>
+						</div>
+						<div class="mng-ctn">Lorem ipsum dolor sit amet, consecte adipiscing elit.</div>
+						<div class="team-item-icon">
+							<a href="#"><span class="team-icon"><i class="fab fa-facebook-f"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-twitter"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-google-plus-g"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-linkedin-in"></i></span></a>
+						</div>
+					</div>
+				</div>
+				<div class="team-item-content">
+					<div class="team-item-img">
+						<a href="#">
+							<img src="./images/team4.jpg" alt="team1">
+							<div class="overlay">
+								<i class="fas fa-search-plus "></i>
+								<i class="fas fa-circle fa-3x"></i>
+							</div>	
+						</a>		
+					</div>		
+					<div class="team-item-ctn">
+						<div class="mng-about">
+							<p style="font-weight:600; font-size: 15px;">Jannie Doe</p>
+							<p style="color:#555;">Teacher of the Different Class</p>
+						</div>
+						<div class="mng-ctn">Lorem ipsum dolor sit amet, consecte adipiscing elit.</div>
+						<div class="team-item-icon">
+							<a href="#"><span class="team-icon"><i class="fab fa-facebook-f"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-twitter"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-google-plus-g"></i></span></a>
+							<a href="#"><span class="team-icon"><i class="fab fa-linkedin-in"></i></span></a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<!-- video component -->
-	<!-- <div class="video-container">
+	<div class="video-container">
 		<div class="video-inside">
-			<a id="displayVideo" href="#"><i class="far fa-play-circle"></i></a>
+			<a id="displayVideo" href="javascript:;"><i class="far fa-play-circle"></i></a>
 			<h2 class="video-title">HOW IT WORKS</h2>
 		</div>
 	</div>
@@ -313,176 +450,275 @@
 	<div class="video-display">
 		<div class="video-area">		
 				<span title="Close" class="video-close">&times;</span>
-				<iframe class="video-iframe" width="900" height="500" src="https://www.youtube.com/embed/m2u9j4OhQEk?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>		
+				<iframe class="video-iframe" width="900" height="500" src="https://www.youtube.com/embed/7e90gBu4pas" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>		
 		</div>
 	</div>
 	
+	<!-- BLOG component -->
+
+	<div class="blog-container">
+		<div class="sub-blog-container">
+			<div class="blog-head-item">lastest from blog</div>
+			<p class="blog-item-para">Nunc gravida venenatis odio, eleifend pellentesque augue pulvinar in. Integer dignissim, sem vel lacinia sagittis, metus magna vestibulum.</p>
+			<div class="blog-body-item">
+				<div class="blog-item-wrapper">
+					<div class="blog-item-img">
+						<img class="blog-img-scale" src="./images/blog1.jpg" alt="blog1">
+					</div>
+					<div class="blog-item-content">
+						<h3 class="blog-item-header">
+							<a href="#">Mosque is very important issue allah</a>
+						</h3>
+						<div class="blog-item-subheader">
+							<span>
+								<a href="#">
+									<i class="fas fa-user"></i>
+									<span>Adam Smith</span>
+								</a>					
+							</span>
+							<span>
+								<a href="#">
+									<i class="far fa-clock"></i>
+									<span>26 OCT 2018</span>
+								</a>
+							</span>
+						</div>
+						<div class="blog-item-content-inside">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing donec vitae leo placerat.</p>
+						</div>
+						<a class="blog-item-read-more" href="#">Read More</a>
+					</div>
+				</div>
+				<div class="blog-item-wrapper">
+					<div class="blog-item-img">
+						<img class="blog-img-scale" src="./images/blog2.jpg" alt="blog1">
+					</div>
+					<div class="blog-item-content">
+						<h3 class="blog-item-header">
+							<a href="#">Mosque accordance Islamic practices</a>
+						</h3>
+						<div class="blog-item-subheader">
+							<span>
+								<a href="#">
+									<i class="fas fa-user"></i>
+									<span>Adam Smith</span>
+								</a>					
+							</span>
+							<span>
+								<a href="#">
+									<i class="far fa-clock"></i>
+									<span>26 OCT 2018</span>
+								</a>
+							</span>
+						</div>
+						<div class="blog-item-content-inside">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing donec vitae leo placerat.</p>
+						</div>
+						<a class="blog-item-read-more" href="#">Read More</a>
+					</div>
+				</div>
+				<div class="blog-item-wrapper">
+					<div class="blog-item-img">
+						<img class="blog-img-scale" src="./images/blog3.jpg" alt="blog1">
+					</div>
+					<div class="blog-item-content">
+						<h3 class="blog-item-header">
+							<a href="#">Apointment of a prayer leader islam</a>
+						</h3>
+						<div class="blog-item-subheader">
+							<span>
+								<a href="#">
+									<i class="fas fa-user"></i>
+									<span>Adam Smith</span>
+								</a>					
+							</span>
+							<span>
+								<a href="#">
+									<i class="far fa-clock"></i>
+									<span>26 OCT 2018</span>
+								</a>
+							</span>
+						</div>
+						<div class="blog-item-content-inside">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing donec vitae leo placerat.</p>
+						</div>
+						<a class="blog-item-read-more" href="#">Read More</a>
+					</div>
+				</div>
+			</div>
+			<div class="blog-footer-item">
+				<h3>
+					<i class="fab fa-telegram-plane"></i>
+					subscribe to us
+				</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+				<form action="#">
+					<input type="email" placeholder="Enter your email">
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- info component -->
+	<div class="info-container">
+		<div class="sub-info-container">
+			<div class="info item-contact">
+				<div class="info-item-ct-img">
+					<img src="./images/LOGO.png" alt="home">
+				</div>
+				<div class="info-item-ct-ctn">Nullam tristique nunc sit amet congue, eget sollicitudin orci nisl.</div>
+				<div class="info-item-ct-ct">
+					<ul class="info-item-ct-ul">
+						<li>
+							<i class="fas fa-phone"></i>
+							<a href="#">+(000)88-123-4455-88</a>
+						</li>
+						<li>
+							<i class="fas fa-envelope"></i>
+							<a href="#">contact@mosque.com</a>
+						</li>
+						<li>
+							<i class="fas fa-map-marker-alt"></i>
+							<a href="#">123 StQueens, NY, USA</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="info company-support">
+				<div class="info item-company">
+					<h4>Company</h4>
+					<div>
+						<ol class="ol-style">
+							<a href="#"><li>About us</li></a>
+							<a href="#"><li>Donation</li></a>
+							<a href="#"><li>Blog</li></a>
+							<a href="#"><li>Video</li></a>
+							<a href="#"><li>Contact us</li></a>
+						</ol>
+					</div>
+				</div>
+				<div class="info item-support">
+					<h4>Help & Support</h4>
+					<div>
+						<ol class="ol-style">
+							<a href="#"><li>Help centre</li></a>
+							<a href="#"><li>Free templates</li></a>
+							<a href="#"><li>Refund policy</li></a>
+							<a href="#"><li>Report span</li></a>		
+						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="info item-gallery  ">
+				<h4>Mosque Gallery</h4>
+				<div class="info-item-img-ctner">
+					<div class="info-item-img">
+						<a href="#">
+							<img src="./images/gallery1.jpg" alt="team1">
+							<div class="info-overlay">
+								<i class="fas fa-search-plus "></i>
+								<i class="fas fa-circle fa-3x"></i>
+							</div>	
+						</a>		
+					</div>	
+					<div class="info-item-img">
+						<a href="#">
+							<img src="./images/gallery2.jpg" alt="team1">
+							<div class="info-overlay">
+								<i class="fas fa-search-plus "></i>
+								<i class="fas fa-circle fa-3x"></i>
+							</div>	
+						</a>		
+					</div>	
+					<div class="info-item-img" style="margin-right:0;">
+						<a href="#">
+							<img src="./images/gallery3.jpg" alt="team1">
+							<div class="info-overlay">
+								<i class="fas fa-search-plus "></i>
+								<i class="fas fa-circle fa-3x"></i>
+							</div>	
+						</a>		
+					</div>	
+					<div class="info-item-img">
+						<a href="#">
+							<img src="./images/gallery4.jpg" alt="team1">
+							<div class="info-overlay">
+								<i class="fas fa-search-plus "></i>
+								<i class="fas fa-circle fa-3x"></i>
+							</div>	
+						</a>		
+					</div>
+					<div class="info-item-img">
+						<a href="#">
+							<img src="./images/gallery5.jpg" alt="team1">
+							<div class="info-overlay">
+								<i class="fas fa-search-plus "></i>
+								<i class="fas fa-circle fa-3x"></i>
+							</div>	
+						</a>		
+					</div>	
+					<div class="info-item-img" style="margin-right:0;">
+						<a href="#">
+							<img src="./images/gallery6.jpg" alt="team1">
+							<div class="info-overlay">
+								<i class="fas fa-search-plus "></i>
+								<i class="fas fa-circle fa-3x"></i>
+							</div>	
+						</a>		
+					</div>		
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer component -->
+	
+	<div class="footer-item">
+		&copy; Mosque 2018. All Rights Reserved
+	</div>
+	<!-- go-to-top -->
+	<a href="#nav-bar" id="goToTop" class="go-to-top">
+		<i class="fas fa-angle-double-up"></i>
+	</a>
+	
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script>
 		var vidDisplay = document.getElementsByClassName("video-display")[0];
 		var displayVideo = document.getElementById("displayVideo");
 		var closebtn = document.getElementsByClassName("video-close")[0];
-		
+		var autoPlay = document.getElementsByClassName("video-iframe")[0];
 
 		displayVideo.onclick = function(){
 			vidDisplay.style.display = "block";
+			document.body.style.overflow = "hidden";
+			autoPlay.setAttribute("src","https://www.youtube.com/embed/7e90gBu4pas?&amp;autoplay=1");
 		}
 		closebtn.onclick = function(){
 			vidDisplay.style.display = "none";
+			document.body.style.overflow = "auto";
+			autoPlay.setAttribute("src","null");		
 		}
 		window.onclick = function(event) {
 		    if (event.target == vidDisplay) {
 		        vidDisplay.style.display = "none";
-			}
+		        document.body.style.overflow = "auto"; 
+		        autoPlay.setAttribute("src","https://www.youtube.com/embed/7e90gBu4pas");
+		    }
 		}
-	</script> -->
-	<!-- BLOG component -->
-
-	<!-- <div class="item-wrapper">
-		<div class="item-img">
-			<img class="img-scale" src="./images/blog1.jpg" alt="blog1">
-		</div>
-		<div class="item-content">
-			<h3 class="item-header">
-				<a href="#">Mosque is very important issue allah</a>
-			</h3>
-			<div class="item-subheader">
-				<span>
-					<a href="#">
-						<i class="fas fa-user"></i>
-						<span>Adam Smith</span>
-					</a>					
-				</span>
-				<span>
-					<a href="#">
-						<i class="far fa-clock"></i>
-						<span>26 OCT 2018</span>
-					</a>
-				</span>
-			</div>
-			<div class="item-content-inside">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing donec vitae leo placerat.</p>
-			</div>
-			<a class="item-read-more" href="#">Read More</a>
-		</div>
-	</div> -->
-
-	
-
-	<!-- info component -->
-	<!-- <div class="info-container">
-		<div class="info item-contact">
-			<div class="info-item-ct-img">
-				<img src="./images/LOGO.png" alt="home">
-			</div>
-			<div class="info-item-ct-ctn">Nullam tristique nunc sit amet congue, eget sollicitudin orci nisl.</div>
-			<div class="info-item-ct-ct">
-				<ul class="info-item-ct-ul">
-					<li>
-						<i class="fas fa-phone"></i>
-						<a href="#">+(000)88-123-4455-88</a>
-					</li>
-					<li>
-						<i class="fas fa-envelope"></i>
-						<a href="#">contact@mosque.com</a>
-					</li>
-					<li>
-						<i class="fas fa-map-marker-alt"></i>
-						<a href="#">123 StQueens, NY, USA</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="info item-company">
-			<h4>Company</h4>
-			<div>
-				<ol class="ol-style">
-					<a href="#"><li>About us</li></a>
-					<a href="#"><li>Donation</li></a>
-					<a href="#"><li>Blog</li></a>
-					<a href="#"><li>Video</li></a>
-					<a href="#"><li>Contact us</li></a>
-				</ol>
-			</div>
-		</div>
-		<div class="info item-support">
-			<h4>Help & Support</h4>
-			<div>
-				<ol class="ol-style">
-					<a href="#"><li>Help centre</li></a>
-					<a href="#"><li>Free templates</li></a>
-					<a href="#"><li>Refund policy</li></a>
-					<a href="#"><li>Report span</li></a>		
-				</ol>
-			</div>
-		</div>
-		<div class="info item-gallery  ">
-			<h4>Mosque Gallery</h4>
-			<div class="info-item-img-ctner">
-				<div class="info-item-img">
-					<a href="#">
-						<img src="./images/gallery1.jpg" alt="team1">
-						<div class="info-overlay">
-							<i class="fas fa-search-plus "></i>
-							<i class="fas fa-circle fa-3x"></i>
-						</div>	
-					</a>		
-				</div>	
-				<div class="info-item-img">
-					<a href="#">
-						<img src="./images/gallery2.jpg" alt="team1">
-						<div class="info-overlay">
-							<i class="fas fa-search-plus "></i>
-							<i class="fas fa-circle fa-3x"></i>
-						</div>	
-					</a>		
-				</div>	
-				<div class="info-item-img" style="margin-right:0;">
-					<a href="#">
-						<img src="./images/gallery3.jpg" alt="team1">
-						<div class="info-overlay">
-							<i class="fas fa-search-plus "></i>
-							<i class="fas fa-circle fa-3x"></i>
-						</div>	
-					</a>		
-				</div>	
-			</div>
-			<div>
-				<div class="info-item-img">
-					<a href="#">
-						<img src="./images/gallery4.jpg" alt="team1">
-						<div class="info-overlay">
-							<i class="fas fa-search-plus "></i>
-							<i class="fas fa-circle fa-3x"></i>
-						</div>	
-					</a>		
-				</div>
-				<div class="info-item-img">
-					<a href="#">
-						<img src="./images/gallery5.jpg" alt="team1">
-						<div class="info-overlay">
-							<i class="fas fa-search-plus "></i>
-							<i class="fas fa-circle fa-3x"></i>
-						</div>	
-					</a>		
-				</div>	
-				<div class="info-item-img" style="margin-right:0;">
-					<a href="#">
-						<img src="./images/gallery6.jpg" alt="team1">
-						<div class="info-overlay">
-							<i class="fas fa-search-plus "></i>
-							<i class="fas fa-circle fa-3x"></i>
-						</div>	
-					</a>		
-				</div>		
-			</div>
-		</div>
-	</div> -->
-	
-	<!-- footer component -->
-	
-	<!-- <div class="footer-item">
-		&copy; Mosque 2018. All Rights Reserved
-	</div> -->
-	
+	</script>
+	<script>
+		// var fixedButton = ;
+		window.onscroll = function(){
+			if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+				document.getElementById("goToTop").style.display = "block";
+			}else{
+				document.getElementById("goToTop").style.display = "none";
+			}
+		};
+	</script>
 </body>
 </html>

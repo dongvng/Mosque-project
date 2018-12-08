@@ -6,3 +6,19 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.go-to-top{
+	display: none;
+	position: fixed;
+	z-index: 14502;
+	right: 30px;
+	bottom: 30px;
+	padding: 8px 15px;
+	color: white;
+	background-color: #555;
+	transition: all 0.3s;
+}
+.go-to-top:hover{
+	background-color: #F0392B;
+	color: white;
+}

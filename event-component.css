@@ -5,7 +5,8 @@
 }
 .event-container{
 	width: 100%;
-	height: 700px;
+	height: 900px;
+	padding: 100px;
 	background-color: rgba(230,230,230,0.2);
 }
 .event-subcontainer{
@@ -99,6 +100,7 @@
 	transition: all 0.3s;
 }
 .event-sub-item a:hover{
+	text-decoration: none;
 	color: white;
 	background-color: red;
 	cursor: pointer;

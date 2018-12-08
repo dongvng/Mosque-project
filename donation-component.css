@@ -79,6 +79,7 @@
 	transition: all 0.3s;
 }
 .donation-content a:hover{
+	text-decoration: none;
 	color: white;
 	background-color: #F0392B;
 	border: 1px solid #F0392B;

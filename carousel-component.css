@@ -1,0 +1,115 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.carousel{
+	position: relative;
+}
+
+.carousel-inner{
+	overflow: visible;
+}
+.carousel-item{
+	backface-visibility: visible;
+}
+.carousel-inner-title{
+	position: absolute;
+	width: 70%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.carousel-item .middle{
+	text-align: center;
+}
+.carousel-item .middle .carousel-lm{
+	display: flex;
+	justify-content: center;
+}
+.carousel-item .right{
+	text-align: right;
+}
+.carousel-item .right .carousel-lm{
+	display: flex;
+	justify-content: flex-end;
+}
+.carousel-inner-title h3{
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 36px;
+	color: white;
+	transition: all 0.3s;
+	margin-bottom: 20px;
+	visibility: hidden;
+	animation-name: firstEle;
+	animation-duration: 1s;
+	animation-delay: 0.3s;
+	animation-fill-mode: forwards;	
+}
+@keyframes firstEle{
+	from{transform: translateY(80%); visibility: hidden;}
+	to{transform: translateY(0); visibility: visible;}
+}
+.carousel-inner-title h2{
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	font-size: 46px;
+	margin-bottom: 20px;
+	visibility: hidden;
+	animation-name: secondEle;
+	animation-duration: 1s;
+	animation-delay: 0.7s;
+	animation-fill-mode: forwards;	
+}
+@keyframes secondEle{
+	from{transform: translateY(80%); visibility: hidden;}
+	to{transform: translateY(0); visibility: visible;}
+}
+.carousel-inner-title p{
+	color: white;
+	visibility: hidden;
+	margin-bottom: 40px;
+	animation-name: thirdEle;
+	animation-duration: 1s;
+	animation-delay: 1.2s;
+	animation-fill-mode: forwards;	
+}
+@keyframes thirdEle{
+	from{transform: translateY(80%); visibility: hidden;}
+	to{transform: translateY(0); visibility: visible;}
+}
+.carousel-inner-title .carousel-lm{	
+	visibility: hidden;	
+	text-transform: uppercase;
+	animation-name: fourthEle;
+	animation-duration: 1s;
+	animation-delay: 1.7s;
+	animation-fill-mode: forwards;	
+}
+.carousel-inner-title .carousel-lm a{
+	color: white;
+	border-radius: 20px;
+	background-color: #F0392B;
+	padding: 12px 24px;
+	transition: all 0.3s;
+}
+.carousel-inner-title .carousel-lm a:hover{
+	text-decoration: none;
+	color: white;
+	background-color: #b7281d;
+}
+@keyframes fourthEle{
+	from{transform: translateY(100%); visibility: hidden;}
+	to{transform: translateY(0); visibility: visible;}
+}
+
+/*indicators*/
+
+.carousel-control-prev{
+	display: none;
+}
+
