@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>component</title>
+	<title>Mosque</title>
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -674,30 +674,28 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	<script>
-		var vidDisplay = document.getElementsByClassName("video-display")[0];
+		var videoEl = document.getElementsByClassName("video-display")[0];
 		var displayVideo = document.getElementById("displayVideo");
-		var closebtn = document.getElementsByClassName("video-close")[0];
+		var closeBtn = document.getElementsByClassName("video-close")[0];
 		var autoPlay = document.getElementsByClassName("video-iframe")[0];
 
 		displayVideo.onclick = function(){
-			vidDisplay.style.display = "block";
+			videoEl.style.display = "block";
 			document.body.style.overflow = "hidden";
 			autoPlay.setAttribute("src","https://www.youtube.com/embed/7e90gBu4pas?&amp;autoplay=1");
 		}
-		closebtn.onclick = function(){
-			vidDisplay.style.display = "none";
+		closeBtn.onclick = function(){
+			videoEl.style.display = "none";
 			document.body.style.overflow = "auto";
 			autoPlay.setAttribute("src","null");		
 		}
 		window.onclick = function(event) {
-		    if (event.target == vidDisplay) {
-		        vidDisplay.style.display = "none";
+		    if (event.target == videoEl) {
+		        videoEl.style.display = "none";
 		        document.body.style.overflow = "auto"; 
 		        autoPlay.setAttribute("src","https://www.youtube.com/embed/7e90gBu4pas");
 		    }
 		}
-	</script>
-	<script>
 		window.onscroll = function(){
 			if(document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
 				document.getElementById("goToTop").style.display = "block";
